@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!--   ・゜ ♡   emoji set code   ♡ ゜ ・  -->
+<script src="https://file.pooftie.me/js/jquery.js"></script>
+<script src="https://middlepot.com/emoji.js"></script>
+<!--   © middlepot.com  ꒰ ू´ ˘ ` ू ꒱  -->
+    <title>weather</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <form id="search">
+            <i class="fa-solid fa-location-dot"  style="color: rgb(141, 178, 189);"></i>
+            <input type="search" name="city-name" id="city-name" placeholder="buscar cidade">
+        <button type="submit">
+            <i class="fa-solid fa-magnifying-glass" style="color: rgb(141, 178, 189);"></i>
+        </button>
+        </form>
+        <section id="weather">
+            <h1 id="title"></h1>
+            <div id="infos">
+                <div id="temp">
+                    <div>
+                        <p id="temp-value">
+                          
+                        </p>
+                        <p id="temp-description">
+                            
+                        </p>
+                    </div>
+                    <div id="phrases"></div>
+                </div>
+                <section id="other-infos">
+                    <!-- inicio da seção: temperatura máx ♡ -->
+                    <div class="info">
+                        <i style="color: rgba(255, 105, 79, 0.842);" class="fa-solid fa-temperature-high"></i>
+                        <div>
+                            <h2>máxima</h2>
+                            <p id="temp-max">00<sup>°C</sup></p>
+                        </div>
+                    </div>
+                    <!-- fim da seção: temperatura máx ♡ -->
+                
+                    <!-- inicio da seção: temperatura min ♡ -->
+                    <div class="info">
+                        <i style="color: rgb(136, 156, 160);" class="fa-solid fa-temperature-low"></i>
+                        <div>
+                            <h2>mínima</h2>
+                            <p id="temp-min">00<sup>°C</sup></p>
+                        </div>
+                    </div>
+                    <!-- fim da seção: temperatura min ♡ -->
+                
+                    <!-- inicio da seção: humidade ♡ -->
+                    <div class="info">
+                        <i style="color: rgb(0, 162, 255);" class="fa-solid fa-droplet"></i>
+                        <div>
+                            <h2>humidade</h2>
+                            <p id="humidity">0%</p>
+                        </div>
+                    </div>
+                    <!-- fim da seção: humidade ♡ -->
+                
+                    <!-- inicio da seção: vento ♡ -->
+                    <div class="info">
+                        <i style="color: rgb(192, 192, 192);" class="fa-solid fa-wind"></i>
+                        <div>
+                            <h2>vento</h2>
+                            <p id="wind">0km/h</p>
+                        </div>
+                    </div>
+                    <!-- fim da seção: vento ♡ -->
+                </section>
+            </div>
+        </section>
+        <div id="alert"></div>
+    </div>
+    <script src="script.js"></script>
+    <!--   ・゜ ♡   emoji set code   ♡ ゜ ・  -->
+<script>loadEmojis();</script>
+<!--   © middlepot.com  ꒰ ू´ ˘ ` ू ꒱  -->
+</body>
+
+</html>

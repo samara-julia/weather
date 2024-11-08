@@ -1,0 +1,115 @@
+* {
+    font-family: 'arima';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(assets/nuvens.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    backdrop-filter: blur(3px);
+    border: 12px solid transparent;
+    border-image: url(assets/border-img.png) 30 round;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#search {
+    color: rgb(158, 175, 197);
+    border: 1px solid rgb(255, 255, 255);
+    display: flex; justify-content: center;
+    align-items: center;
+    gap: 11px;
+    border-radius: 12px;
+    padding: 8px 12px;
+}
+
+#search input {
+    color: rgb(72, 121, 128);
+    border: none;
+    background-color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(72, 121, 128, 0.596);
+}
+
+#search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: rotate(45deg);
+}
+
+
+
+#weather {
+    margin-top: 20px;
+}
+
+#weather #title {
+    text-align: center;
+    font-weight: 700;
+    color: rgb(133, 168, 177);
+}
+
+#temp {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(157, 185, 189, 0.151);
+    border-radius: 10px 30px;
+}
+
+#temp-value {
+    font-size: 1.8em;
+}
+
+#temp #temp-description {
+    font-size: 1.2em;
+}
+
+#other-infos {
+    color: rgb(133, 168, 177);
+    margin-top: 12px;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+#other-infos .info {
+    display: flex; align-items: center; justify-content: start;
+    padding: 4px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgb(165, 181, 190);
+    gap: 10px;
+}
+
+#other-infos .info h2 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#other-infos .info i {
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+}
